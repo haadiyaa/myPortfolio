@@ -3,6 +3,7 @@ import 'package:http/http.dart';
 import 'package:portfolio/model/experienceModel.dart';
 import 'package:portfolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 enum ScreenType { mobile, tab, web }
 
@@ -132,12 +133,22 @@ Features
                 ]));
   }
 
-  Future<bool> sendEmail(name, contact, msg) async {
-    var url = Uri.https('hbk-portfolio-mailer.web.app', '/sendMail');
-    var response = await post(url,
-            body: {"name": name, "contactInfo": contact, "message": msg})
-        .timeout(Duration(seconds: 10));
-    print(response.body);
-    return response.statusCode == 200;
+  Future<bool> sendEmail(name, contact, msg)async{
+    String mailUrl='mailto:haadiyact@gmail.com';
+    try {
+      await launchUrlString(mailUrl);
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
+
+  // Future<bool> sendEmail(name, contact, msg) async {
+  //   var url = Uri.https('hbk-portfolio-mailer.web.app', '/sendMail');
+  //   var response = await post(url,
+  //           body: {"name": name, "contactInfo": contact, "message": msg})
+  //       .timeout(Duration(seconds: 10));
+  //   print(response.body);
+  //   return response.statusCode == 200;
+  // }
 }
