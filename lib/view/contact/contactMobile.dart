@@ -65,7 +65,8 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
                       padding: EdgeInsets.only(top: 50, bottom: 70),
                       child: InkWell(
                         onTap: () {
-                          showMobileMessageDialog(context);
+                          // showMobileMessageDialog(context);
+                          AppClass().sendEmail();
                         },
                         child: Container(
                           height: AppClass().getMqHeight(context) * 0.07,
@@ -107,7 +108,6 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
     final nameController = TextEditingController();
     final contactInfoController = TextEditingController();
     final msgController = TextEditingController();
-
     final _formKey = GlobalKey<FormState>();
 
     showDialog(
@@ -209,19 +209,19 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
                                         onTap: () async {
                                           if (_formKey.currentState!.validate()) {
                                             ref.read(progressProvider.notifier).state = true;
-                                            AppClass().sendEmail(nameController.text, contactInfoController.text, msgController.text).then((value) {
-                                              if (value) {
-                                                Navigator.pop(context);
-                                                AppClass().showSnackBar('Message sent successfully', context: context);
-                                              } else {
-                                                Navigator.pop(context);
-                                                AppClass().showSnackBar('Failed to send message, please try again later.', context: context);
-                                              }
-                                              ref.read(progressProvider.notifier).state = false;
-                                            }).onError((error, stackTrace) {
-                                              Navigator.pop(context);
-                                              AppClass().showSnackBar('Error Occurred', context: context);
-                                            });
+                                            // AppClass().sendEmail(nameController.text, contactInfoController.text, msgController.text).then((value) {
+                                            //   if (value) {
+                                            //     Navigator.pop(context);
+                                            //     AppClass().showSnackBar('Message sent successfully', context: context);
+                                            //   } else {
+                                            //     Navigator.pop(context);
+                                            //     AppClass().showSnackBar('Failed to send message, please try again later.', context: context);
+                                            //   }
+                                            //   ref.read(progressProvider.notifier).state = false;
+                                            // }).onError((error, stackTrace) {
+                                            //   Navigator.pop(context);
+                                            //   AppClass().showSnackBar('Error Occurred', context: context);
+                                            // });
                                           }
                                         },
                                         child: Container(

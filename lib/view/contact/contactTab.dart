@@ -70,7 +70,8 @@ class _ContactTabState extends ConsumerState<ContactTab> {
                 padding: EdgeInsets.only(top: 50, bottom: 70),
                 child: InkWell(
                   onTap: () {
-                    showTabMessageDialog(context);
+                    // showTabMessageDialog(context);
+                    AppClass().sendEmail();
                   },
                   child: Container(
                     height: AppClass().getMqHeight(context) * 0.09,
@@ -205,19 +206,19 @@ class _ContactTabState extends ConsumerState<ContactTab> {
                                       onTap: () async {
                                         if (_formKey.currentState!.validate()) {
                                           ref.read(progressProvider.notifier).state = true;
-                                          AppClass().sendEmail(nameController.text, contactInfoController.text, msgController.text).then((value) {
-                                            if (value) {
-                                              Navigator.pop(context);
-                                              AppClass().showSnackBar('Message sent successfully', context: context);
-                                            } else {
-                                              Navigator.pop(context);
-                                              AppClass().showSnackBar('Failed to send message, please try again later.', context: context);
-                                            }
-                                            ref.read(progressProvider.notifier).state = false;
-                                          }).onError((error, stackTrace) {
-                                            Navigator.pop(context);
-                                            AppClass().showSnackBar('Error Occurred', context: context);
-                                          });
+                                          // AppClass().sendEmail(nameController.text, contactInfoController.text, msgController.text).then((value) {
+                                          //   if (value) {
+                                          //     Navigator.pop(context);
+                                          //     AppClass().showSnackBar('Message sent successfully', context: context);
+                                          //   } else {
+                                          //     Navigator.pop(context);
+                                          //     AppClass().showSnackBar('Failed to send message, please try again later.', context: context);
+                                          //   }
+                                          //   ref.read(progressProvider.notifier).state = false;
+                                          // }).onError((error, stackTrace) {
+                                          //   Navigator.pop(context);
+                                          //   AppClass().showSnackBar('Error Occurred', context: context);
+                                          // });
                                         }
                                       },
                                       child: Container(

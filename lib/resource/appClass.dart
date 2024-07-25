@@ -147,7 +147,7 @@ Features
                 ]));
   }
 
-  Future<bool> sendEmail(name, contact, msg) async {
+  Future<bool> sendEmail() async {
     String mailUrl = 'mailto:haadiyact@gmail.com';
     try {
       await launchUrlString(mailUrl);
