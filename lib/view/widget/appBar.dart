@@ -31,11 +31,11 @@ class _ActionBarState extends ConsumerState<ActionBar> {
               padding: const EdgeInsets.only(left: 10.0),
               child: Row(
                 children: [
-                  Image.asset(
-                    'assets/svg/appLogo.png',
-                    width: AppClass().getMqWidth(context) * 0.078,
-                    height: AppClass().getMqHeight(context) * 0.08,
-                  ),
+                  // Image.asset(
+                  //   'assets/svg/appLogo.png',
+                  //   width: AppClass().getMqWidth(context) * 0.078,
+                  //   height: AppClass().getMqHeight(context) * 0.08,
+                  // ),
                   Expanded(
                     flex: 9,
                     child: Row(
@@ -133,13 +133,13 @@ class _ActionBarState extends ConsumerState<ActionBar> {
           }
           return Row(
             children: [
-              Expanded(
-                  child: Container(
-                      width: AppClass().getMqWidth(context) * 0.07,
-                      height: AppClass().getMqHeight(context) * 0.07,
-                      child: Image.asset(
-                        'assets/svg/appLogo.png',
-                      ))),
+              // Expanded(
+              //     child: Container(
+              //         width: AppClass().getMqWidth(context) * 0.07,
+              //         height: AppClass().getMqHeight(context) * 0.07,
+              //         child: Image.asset(
+              //           'assets/svg/appLogo.png',
+              //         ))),
               Expanded(
                 flex: 9,
                 child: Row(
@@ -222,31 +222,6 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                         ),
                       ),
                     ),
-                    // InkWell(
-                    //   onTap: () {
-                    //     widget.controller.scrollToIndex(4, preferPosition: AutoScrollPosition.begin);
-                    //   },
-                    //   onHover: (bol) {
-                    //     if (bol) {
-                    //       ref.read(hoverProvider.notifier).state = "gameTitle";
-                    //     } else {
-                    //       ref.read(hoverProvider.notifier).state = "";
-                    //     }
-                    //   },
-                    //   child: Padding(
-                    //     padding: const EdgeInsets.only(right: 30.0),
-                    //     child: Row(
-                    //       children: [
-                    //         Text("04.", style: TextStyle(color: AppColors().neonColor, fontSize: 13, fontFamily: 'sfmono')),
-                    //         Consumer(builder: (context, ref, child) {
-                    //           String state = ref.watch(hoverProvider);
-                    //           bool isHovered = (state == "gameTitle");
-                    //           return Text("Games", style: TextStyle(color: isHovered ? AppColors().neonColor : AppColors().textColor, fontSize: 13));
-                    //         }),
-                    //       ],
-                    //     ),
-                    //   ),
-                    // ),
                     InkWell(
                       onTap: () {
                         widget.controller.scrollToIndex(5, preferPosition: AutoScrollPosition.begin);

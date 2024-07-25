@@ -14,7 +14,7 @@ class AppClass {
 
   /* URL */
   static final resumeDownloadURL =
-      '''https://github.com/haadiyaa/eventeaze/blob/master/assets/google1.png''';
+      '''https://drive.google.com/file/d/1D0FfD_AG32ZSUIJTF51IsGFCdBMkA_jk/view?usp=sharing''';
 
   static final gitEZ = '''https://github.com/haadiyaa/eventeaze''';
 
@@ -22,7 +22,7 @@ class AppClass {
   static final gitTodo = '''https://github.com/haadiyaa/todo_app''';
   static final gitGemini = '''https://github.com/haadiyaa/geminibot''';
   static final gitStudent = '''https://github.com/haadiyaa/student-details''';
-
+  static final gitHidhaya = '''https://github.com/haadiyaa/hidhayah_app''';
 
   List<WorkModel> projectList = [
     WorkModel(
@@ -38,6 +38,20 @@ Features
 - The event organizers get notifications when the attendees join the event.''',
         tech1: "Flutter",
         tech2: "Firebase",
+        tech3: "BLoC"),
+    WorkModel(
+        projectTitle: "Hidhayah",
+        projectContent:
+            '''A comprehensive Islamic app developed using Flutter and Bloc state management. Leverages APIs for data-driven content and features. Offers a user-friendly interface for practicing Muslims.
+
+Features
+- Arabic text, translations, and audio recitations for in-depth Quranic study and arabic text and English translations of daily supplications.
+- Accurate prayer time calculations based on user location and real-time Qibla direction finder using the device's compass.
+- Provides both Gregorian and Hijri calendars for date tracking.
+- Delivers Islamic lectures, sermons, and other educational videos and interactive quizzes to test Islamic knowledge.
+- Digital tasbih for tracking dhikr.''',
+        tech1: "Flutter",
+        tech2: "API",
         tech3: "BLoC"),
     WorkModel(
       projectTitle: "Weather App",
@@ -133,8 +147,8 @@ Features
                 ]));
   }
 
-  Future<bool> sendEmail(name, contact, msg)async{
-    String mailUrl='mailto:haadiyact@gmail.com';
+  Future<bool> sendEmail(name, contact, msg) async {
+    String mailUrl = 'mailto:haadiyact@gmail.com';
     try {
       await launchUrlString(mailUrl);
       return true;
