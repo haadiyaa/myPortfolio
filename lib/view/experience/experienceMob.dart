@@ -41,7 +41,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
-                          Strings.expAbout3,
+                          Strings.expAbout1,
                           style: TextStyle(color: AppColors().textLight, letterSpacing: 1, height: 1.5, fontSize: 13, fontFamily: 'sfmono'),
                         ),
                       ),
@@ -65,7 +65,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
-                          Strings.expAbout3_2,
+                          Strings.expAbout1_2,
                           style: TextStyle(color: AppColors().textLight, letterSpacing: 1, height: 1.5, fontSize: 13, fontFamily: 'sfmono'),
                         ),
                       ),
@@ -89,7 +89,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
-                          Strings.expAbout3_3,
+                          Strings.expAbout1_3,
                           style: TextStyle(color: AppColors().textLight, letterSpacing: 1, height: 1.5, fontSize: 13, fontFamily: 'sfmono'),
                         ),
                       ),
@@ -306,47 +306,47 @@ class _ExperienceMobState extends State<ExperienceMob> {
                           decoration: BoxDecoration(
                               color: data == 0 ? AppColors().cardColor : Colors.transparent, border: Border(left: BorderSide(color: data == 0 ? AppColors().neonColor : Colors.white, width: 2))),
                           child: Text(
-                            'Netaccess',
+                            'Self Stack',
                             textAlign: TextAlign.center,
                             style: TextStyle(fontWeight: FontWeight.bold, color: data == 0 ? AppColors().neonColor : AppColors().textLight, height: 1.5, fontSize: 14, fontFamily: 'sfmono'),
                           ),
                         ),
                       ),
                     ),
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          ref.read(selectedExpProvider.notifier).state = 1;
-                        },
-                        child: Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                              color: data == 1 ? AppColors().cardColor : Colors.transparent, border: Border(left: BorderSide(color: data == 1 ? AppColors().neonColor : Colors.white, width: 2))),
-                          child: Text(
-                            'Rax-Tech',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontWeight: FontWeight.bold, color: data == 1 ? AppColors().neonColor : AppColors().textLight, height: 1.5, fontSize: 14, fontFamily: 'sfmono'),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          ref.read(selectedExpProvider.notifier).state = 2;
-                        },
-                        child: Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                              color: data == 2 ? AppColors().cardColor : Colors.transparent, border: Border(left: BorderSide(color: data == 2 ? AppColors().neonColor : Colors.white, width: 2))),
-                          child: Text(
-                            'Techno Kryon',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontWeight: FontWeight.bold, color: data == 2 ? AppColors().neonColor : AppColors().textLight, height: 1.5, fontSize: 14, fontFamily: 'sfmono'),
-                          ),
-                        ),
-                      ),
-                    ),
+                    // Expanded(
+                    //   child: InkWell(
+                    //     onTap: () {
+                    //       ref.read(selectedExpProvider.notifier).state = 1;
+                    //     },
+                    //     child: Container(
+                    //       padding: EdgeInsets.all(10.0),
+                    //       decoration: BoxDecoration(
+                    //           color: data == 1 ? AppColors().cardColor : Colors.transparent, border: Border(left: BorderSide(color: data == 1 ? AppColors().neonColor : Colors.white, width: 2))),
+                    //       child: Text(
+                    //         'Rax-Tech',
+                    //         textAlign: TextAlign.center,
+                    //         style: TextStyle(fontWeight: FontWeight.bold, color: data == 1 ? AppColors().neonColor : AppColors().textLight, height: 1.5, fontSize: 14, fontFamily: 'sfmono'),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
+                    // Expanded(
+                    //   child: InkWell(
+                    //     onTap: () {
+                    //       ref.read(selectedExpProvider.notifier).state = 2;
+                    //     },
+                    //     child: Container(
+                    //       padding: EdgeInsets.all(10.0),
+                    //       decoration: BoxDecoration(
+                    //           color: data == 2 ? AppColors().cardColor : Colors.transparent, border: Border(left: BorderSide(color: data == 2 ? AppColors().neonColor : Colors.white, width: 2))),
+                    //       child: Text(
+                    //         'Techno Kryon',
+                    //         textAlign: TextAlign.center,
+                    //         style: TextStyle(fontWeight: FontWeight.bold, color: data == 2 ? AppColors().neonColor : AppColors().textLight, height: 1.5, fontSize: 14, fontFamily: 'sfmono'),
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                   ]),
                 ),
                 Container(

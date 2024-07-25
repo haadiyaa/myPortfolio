@@ -21,29 +21,29 @@ class Strings {
   static final tech5 = ''' Hive'''; // space for manual padding
   static final tech6 = ''' SQFlite'''; // space for manual padding
   static final tech7 = ''' Git'''; // space for manual padding
-  static final tech8 = ''' Api Integration'''; // space for manual padding
+  static final tech8 = ''' API Integration'''; // space for manual padding
 
   /* Exp screen contents */
   static final expCompName1 = '''Self Stack''';
   static final expDesig1 = '''Flutter Intern''';
-  static final expDur1 = '''Nov 2019 - Mar 2020''';
-  static final expAbout1 = '''To kick start my carrier in IT, joined as an Intern to gain knowledge and experience in software industry, Mobile Application Development.''';
-  static final expAbout1_2 = '''Learned and explored native Android architecture models, network calls and core functionality.''';
-  static final expAbout1_3 = '''Has worked on several live projects on different platforms such as e-commerce, ERP, CMS Applications.''';
+  static final expDur1 = '''Sept 2023 - Present''';
+  static final expAbout1 = '''To kick start my carrier in IT, joined as an Intern to gain knowledge and experience in Flutter Mobile Application Development and software industry.''';
+  static final expAbout1_2 = '''Proficient in building cross-platform mobile applications using Dart and Flutter. And in-depth knowledge in various state management solutions including Provider, GetX, and BLoC''';
+  static final expAbout1_3 = '''Has worked on several projects using API Intergration, Firebase and is familiar using different tools such as SQFlite, Hive and Figma.''';
 
-  static final expCompName2 = '''Rax-Tech International''';
-  static final expDesig2 = '''Mobile App Developer''';
-  static final expDur2 = '''Aug 2020 - Jun 2022''';
-  static final expAbout2 = '''Worked as a senior mobile app developer and maintained a team of Freshers and interns to provide a hands-on solution.''';
-  static final expAbout2_2 = '''Design and maintenance of the key functions of IoT (Internet of Things), Erp, CMS and innovative applications.''';
-  static final expAbout2_3 = '''Experienced many technologies such as wifi (TCP/UDP), BLE, MQTT, LIVE DATA, Google ML - Tensor Flow, GraphQL and so on.''';
+  // static final expCompName2 = '''Rax-Tech International''';
+  // static final expDesig2 = '''Mobile App Developer''';
+  // static final expDur2 = '''Aug 2020 - Jun 2022''';
+  // static final expAbout2 = '''Worked as a senior mobile app developer and maintained a team of Freshers and interns to provide a hands-on solution.''';
+  // static final expAbout2_2 = '''Design and maintenance of the key functions of IoT (Internet of Things), Erp, CMS and innovative applications.''';
+  // static final expAbout2_3 = '''Experienced many technologies such as wifi (TCP/UDP), BLE, MQTT, LIVE DATA, Google ML - Tensor Flow, GraphQL and so on.''';
 
-  static final expCompName3 = '''Self Stack''';
-  static final expDesig3 = '''Flutter Intern''';
-  static final expDur3 = '''Sep 2022 - Present''';
-  static final expAbout3 = '''An entity of India's leading business conglomerate Murugappa Group of companies.''';
-  static final expAbout3_2 = '''Worked with a team of 5 engineers to create field force automation applications, business-to-business applications, etc.''';
-  static final expAbout3_3 = '''Interfacing with customers on a weekly basis, delivering technology expertise.''';
+  // static final expCompName3 = '''Self Stack''';
+  // static final expDesig3 = '''Flutter Intern''';
+  // static final expDur3 = '''Sep 2022 - Present''';
+  // static final expAbout3 = '''An entity of India's leading business conglomerate Murugappa Group of companies.''';
+  // static final expAbout3_2 = '''Worked with a team of 5 engineers to create field force automation applications, business-to-business applications, etc.''';
+  // static final expAbout3_3 = '''Interfacing with customers on a weekly basis, delivering technology expertise.''';
 
   /* Contact screen content */
   static final endTxt =
