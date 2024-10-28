@@ -23,18 +23,31 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
       child: Column(
         children: [
           RichText(
-            text: TextSpan(text: "03.", style: TextStyle(color: AppColors().neonColor, fontSize: 20, fontFamily: 'sfmono'), children: <TextSpan>[
-              TextSpan(
-                text: ' My Noteworthy Projects',
-                style: GoogleFonts.roboto(color: AppColors().textColor, letterSpacing: 1, fontWeight: FontWeight.bold, fontSize: 18),
-              )
-            ]),
+            text: TextSpan(
+                text: "03.",
+                style: TextStyle(
+                    color: AppColors().neonColor,
+                    fontSize: 20,
+                    fontFamily: 'sfmono'),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: ' My Noteworthy Projects',
+                    style: GoogleFonts.roboto(
+                        color: AppColors().textColor,
+                        letterSpacing: 1,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  )
+                ]),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
               'view the archives',
-              style: TextStyle(color: AppColors().neonColor, fontSize: AppClass().getMqWidth(context) * 0.035, fontFamily: 'sfmono'),
+              style: TextStyle(
+                  color: AppColors().neonColor,
+                  fontSize: AppClass().getMqWidth(context) * 0.035,
+                  fontFamily: 'sfmono'),
             ),
           ),
           Expanded(
@@ -46,6 +59,9 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                   Tile(index: 1),
                   Tile(index: 2),
                   Tile(index: 3),
+                  Tile(index: 4),
+                  Tile(index: 5),
+                  Tile(index: 6),
                 ],
               ),
             ),
@@ -78,6 +94,12 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
           case 4:
             await launchUrl(Uri.parse(AppClass.gitStudent));
             break;
+          case 5:
+            await launchUrl(Uri.parse(AppClass.gitStudent));
+            break;
+          case 6:
+            await launchUrl(Uri.parse(AppClass.gitStudent));
+            break;
         }
       },
       onHover: (bool) {
@@ -93,7 +115,9 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
         return Container(
           margin: EdgeInsets.all(isHovered ? 8.0 : 0.0),
           child: Tooltip(
-            message: AppClass().projectList[index].projectTitle.toString() + "\n\n" + AppClass().projectList[index].projectContent.toString(),
+            message: AppClass().projectList[index].projectTitle.toString() +
+                "\n\n" +
+                AppClass().projectList[index].projectContent.toString(),
             padding: EdgeInsets.all(20),
             margin: EdgeInsets.all(AppClass().getMqWidth(context) * 0.1),
             waitDuration: Duration(seconds: 3),
@@ -127,7 +151,9 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                             'assets/svg/externalLink.svg',
                             width: 20,
                             height: 20,
-                            color: isHovered ? AppColors().neonColor : Colors.white,
+                            color: isHovered
+                                ? AppColors().neonColor
+                                : Colors.white,
                           ),
                         ],
                       ),
@@ -136,10 +162,19 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                         child: Row(
                           children: [
                             Text(
-                              AppClass().projectList[index].projectTitle.toString(),
+                              AppClass()
+                                  .projectList[index]
+                                  .projectTitle
+                                  .toString(),
                               textAlign: TextAlign.left,
                               style: GoogleFonts.robotoSlab(
-                                  color: isHovered ? AppColors().neonColor : Colors.white, letterSpacing: 1, fontWeight: FontWeight.bold, fontSize: AppClass().getMqWidth(context) * 0.06),
+                                  color: isHovered
+                                      ? AppColors().neonColor
+                                      : Colors.white,
+                                  letterSpacing: 1,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize:
+                                      AppClass().getMqWidth(context) * 0.06),
                             ),
                           ],
                         ),
@@ -148,7 +183,10 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                         child: Padding(
                           padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                           child: Text(
-                            AppClass().projectList[index].projectContent.toString(),
+                            AppClass()
+                                .projectList[index]
+                                .projectContent
+                                .toString(),
                             style: GoogleFonts.roboto(
                               color: AppColors().textLight,
                               letterSpacing: 1,

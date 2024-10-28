@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:portfolio/model/experienceModel.dart';
 import 'package:portfolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -14,7 +13,7 @@ class AppClass {
 
   /* URL */
   static final resumeDownloadURL =
-      '''https://drive.google.com/file/d/1D0FfD_AG32ZSUIJTF51IsGFCdBMkA_jk/view?usp=sharing''';
+      '''https://drive.google.com/file/d/1DniYQyDACUA2Sk-VxsAwzhIFm_yDiDm9/view?usp=sharing''';
 
   static final gitEZ = '''https://github.com/haadiyaa/eventeaze''';
 
@@ -23,6 +22,7 @@ class AppClass {
   static final gitGemini = '''https://github.com/haadiyaa/geminibot''';
   static final gitStudent = '''https://github.com/haadiyaa/student-details''';
   static final gitHidhaya = '''https://github.com/haadiyaa/hidhayah_app''';
+  static final gitMainford = '''https://github.com/haadiyaa/mainford''';
 
   List<WorkModel> projectList = [
     WorkModel(
@@ -97,6 +97,17 @@ Features
         tech1: "Flutter",
         tech2: "SQFlite",
         tech3: "MVC"),
+    WorkModel(
+        projectTitle: "Main Ford",
+        projectContent:
+            '''A Flutter Learning App built using API Integration and Provider state management. With a user-friendly interface, Main Ford allows users to watch videos effortlessly while refering other firends to app.
+
+Features
+- Integrated user registration, admin approval, email-based login.
+- Implemented features like referral tracking, withdrawal requests, and seamless video learning on the dashboard.''',
+        tech1: "Flutter",
+        tech2: "Api Integration",
+        tech3: "Provider"),
   ];
 
   factory AppClass() {

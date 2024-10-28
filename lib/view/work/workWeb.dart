@@ -86,6 +86,11 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
                 mainAxisCellCount: 1,
                 child: getTile(index: 5),
               ),
+              StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: 1,
+                child: getTile(index: 6),
+              ),
             ],
           ),
         ),
@@ -119,6 +124,10 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
 
           case 5:
             await launchUrl(Uri.parse(AppClass.gitStudent));
+            break;
+
+          case 6:
+            await launchUrl(Uri.parse(AppClass.gitMainford));
             break;
         }
       },
